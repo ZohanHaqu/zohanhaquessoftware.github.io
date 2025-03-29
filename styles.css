@@ -1,0 +1,54 @@
+/* General page styling */
+body {
+    background-color: black;
+    color: green;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: green;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

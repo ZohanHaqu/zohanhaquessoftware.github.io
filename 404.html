@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found | Zohan Haque's Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: lightgreen;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 5rem;
+            color: green;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        /* Dotted loading bar animation */
+        .loading-bar {
+            margin-top: 20px;
+            width: 80%;
+            height: 20px;
+            border: 2px dotted green;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .loading-bar span {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: green;
+            animation: loading 3s linear forwards;
+        }
+
+        @keyframes loading {
+            0% {
+                left: -100%;
+            }
+            50% {
+                left: 0;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        /* Red triangle */
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 40px solid red;
+            margin-top: 20px;
+            visibility: hidden;
+            animation: showTriangle 3s forwards;
+        }
+
+        @keyframes showTriangle {
+            0% {
+                visibility: hidden;
+            }
+            100% {
+                visibility: visible;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Oops! The page you are looking for doesn't exist.</p>
+        <p>It might have been moved or deleted.</p>
+        
+        <!-- Dotted loading bar -->
+        <div class="loading-bar">
+            <span></span>
+        </div>
+        
+        <!-- Red triangle for failure indication -->
+        <div class="triangle"></div>
+    </div>
+</body>
+</html>
